@@ -1,0 +1,17 @@
+DUMP ON
+LIT 3
+LIT 3
+BOP ==
+LIT 2 
+BOP <
+LIT 2
+BOP <=
+LIT 2
+BOP +
+LIT 2
+BOP >
+LIT 2
+BOP +
+LIT 2
+BOP >=
+HALT

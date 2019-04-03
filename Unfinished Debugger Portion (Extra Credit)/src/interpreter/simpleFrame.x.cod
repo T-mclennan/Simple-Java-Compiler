@@ -1,0 +1,6 @@
+DUMP ON
+LIT 3
+LOAD 0 i
+LIT 5
+STORE 0 i
+HALT

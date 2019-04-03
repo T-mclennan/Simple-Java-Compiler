@@ -1,0 +1,11 @@
+DUMP ON
+LIT 3
+LIT 4
+BOP +
+LIT 2
+BOP -
+LIT 6
+BOP *
+LIT 3
+BOP /
+HALT

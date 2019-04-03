@@ -1,0 +1,10 @@
+DUMP ON
+LIT 4
+LABEL start
+LIT 1
+BOP -
+LOAD 0 i
+FALSEBRANCH exit
+GOTO start
+LABEL exit
+HALT

@@ -1,0 +1,23 @@
+DUMP ON
+LIT 0 doNothing
+LIT 0 otherNothing
+LIT 3 
+LIT 4 
+ARGS 2
+CALL multiply
+STORE 0 i
+POP 1
+HALT
+LABEL multiply
+LOAD 0 i
+LOAD 1 j
+BOP *
+LIT 6 
+ARGS 2
+CALL accumulate
+RETURN multiply
+LABEL accumulate
+LOAD 0 x
+LOAD 1 k
+BOP +
+RETURN accumulate

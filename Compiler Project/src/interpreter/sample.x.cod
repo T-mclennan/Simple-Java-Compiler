@@ -1,0 +1,41 @@
+DUMP ON
+GOTO start<<1>> 
+LABEL Read
+READ
+RETURN
+LABEL Write
+LOAD 0 dummyFormal 
+WRITE
+RETURN
+LABEL start<<1>>
+LIT 0 i 
+LIT 0 j 
+GOTO continue<<3>>
+LABEL f<<2>> 
+LIT 0 j 
+LIT 0 k 
+LOAD 0 i 
+LOAD 1 j
+BOP +
+LOAD 2 k
+BOP +
+LIT 2
+BOP +
+RETURN f<<2>> 
+POP 2 
+LIT 0 GRATIS-RETURN-VALUE
+RETURN f<<2>>
+LABEL continue<<3>>
+LIT 0 m 
+LIT 3 
+ARGS 1
+CALL f<<2>>
+STORE 2 m 
+LOAD 1 j 
+LOAD 2 m
+BOP +
+ARGS 1
+CALL Write
+STORE 0 i 
+POP 3 
+HALT
