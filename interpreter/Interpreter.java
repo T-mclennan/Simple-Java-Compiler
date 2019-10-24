@@ -14,11 +14,6 @@ import interpreter.debugger.*;
  *  
  *  @param sourceFile the String describing the user's source file 
  *  
- *  I ran out of time on this assignment, another 2 days work and I think I could have had it!
- *  
- *  I was working on getting the codeGen to properly produce the LINE ByteCode, and from 
- *  there I could do FUNCTION, and the rest seems straight forward. Thanks!
- *  
  *  Interpreter class is a driver program that serves to illustrate 
  *  the use of the ByteCodeLoader, Program Class, and ByteCode Classes. 
  *  It takes a command line input specifying the Source File (*.x.code), 
