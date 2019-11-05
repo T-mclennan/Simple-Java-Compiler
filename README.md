@@ -12,8 +12,8 @@ Constrainer: The constrainer inputs in the AST's from the parser, and uses a rec
 
 Interpreter: The interpreter takes in the stream of decorated AST's, runs them through the Compiler to generate corresponding Bytecode tokens, (A Bytecode is equivalent to an assembly operation found in MIPS). It then sets up a virtual runtime environment (the Virtual Machine) and runs the given Bytecodes.
 
-Compiler:
+Compiler: The Compiler generates Bytecode tokens that are then run on Virtual Machine. 
 
-Virtual Machine: Composed of two Stacks, one for the actual stack frame itself and one for the frame pointers to manage function returns. Block scoping is done using a unique datastructure. 
+Virtual Machine: Composed of two Stacks, one for the actual stack frame and one for the frame pointers to manage function returns. Block scoping is done using a unique data structure. 
 
 Debugger: The Debugger is a wrapper that gives a command line interface to the workings of the interpreter. Instead of executing all the Bytecodes immediately and returning the result, the debugger allows for the User to step through each action, check the state of the variables and environment, add breakpoints, change values, etc. It is equivalent to a command line IDE. This was an extra credit assignment, I got most of the way through constructing it and hope to finish it soon. 
