@@ -1,6 +1,7 @@
 # Simple Java Compiler (Java)
 
-## I built a simple Java compiler in Java as a project in an OO design class.
+I built a simple Java compiler in Java as a project in an OO design class.
+
 A boilerplate template was provided for many of the core components (lexer, parser, constrainer, codegen, and compiler). I extended and connected these pieces and implemented the interpreter, virtual machine, debugger, and a custom bytecode library to fit specifications. 
 
 ## Lexer: 
